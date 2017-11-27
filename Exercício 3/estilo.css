@@ -1,0 +1,198 @@
+body {
+	background: #f6f6f6;
+	max-width: 560px;
+	margin: auto;
+	width: 100%;
+	font-family: "Arial";
+}
+
+.cabecalho {
+	display:  flex;
+	justify-content: space-between; 
+	align-items: center;
+}
+
+.cabecalho h2 {
+	font-size: 20px;
+	font-weight: normal;
+	color: #555;
+}
+
+.cabecalho .setinha {
+	height: 16px;
+	margin-left: 10px;
+}
+
+.cabecalho a {
+	color: #a8a8a8;
+	text-decoration: none;
+	transition: all 0.6s;
+}
+
+.cabecalho a:hover {
+	color: black;
+
+}
+
+.banner h1 {
+	background-color: #4a6527;
+	text-align: right;
+	color: white;
+	margin: 0px;
+	padding: 20px;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+.banner img {
+		width: 100%;
+		display: block;
+}
+
+.banner {
+	margin-bottom: 20px;
+}
+
+.caixabranca {
+	background-color: white;
+	padding: 20px;
+	
+	border: solid 1px #ddd;	
+}
+
+.caixabranca h2 {
+	color: #555;
+	font-weight: normal;
+	margin-top: 0;
+
+}
+
+.caixabranca p, .caixabranca ul {
+	font-size: 14px;
+	color: #ababab;
+}
+
+.caixabranca li {
+	font-size: 14px;
+	color: #ababab;
+}
+
+.botaoverde {
+	background-color: #4A6527;
+	color: white;
+	padding: 10px;	
+	font-size: normal;
+	border: none;
+	display: block;
+	margin-left: auto;
+}
+
+.colunas {
+	display: flex;
+	margin: 20px 0;
+}
+
+.colunas .metade {
+	width: 50%;
+	margin: auto;
+}
+
+.colunas .umterco {
+	width: 34%;
+}
+
+.colunas .doistercos {
+	width: 66%;
+}
+
+.caixabranca img {
+	width: 100%;
+}
+
+.caixabranca ul {
+	padding-left: 20px;
+}
+
+.colunas .coluna:first-child {
+	margin-right: 20px;
+}
+
+.caixaverde {
+	background-color: #7E9E52;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 0;
+	justify-content: space-between;
+
+}
+
+.caixaverde .conteudo {
+	color: white;
+	padding: 20px;
+	margin-top: 0;
+	font-size: 14px;
+}
+
+.caixaverde h2 {
+	font-weight: normal;
+	margin-top: 0;
+	padding: 0;
+}
+
+.caixaverde a {
+	color: white;
+	background-color: #4A6527;
+	text-decoration: none;
+	padding: 20px;
+	font-size: 14px;
+}
+
+.caixaverde p {
+	color: white;
+	font-size: 14px;
+	
+}
+
+.link {
+	font-weight: bold;
+	color: #7E9E52;
+	text-decoration: none;
+	border: none;
+}
+
+.rodape {
+	display: flex;
+	background-color: #7e9e52;
+	color: white;
+	align-items: center;
+	padding: 0;
+}
+
+.rodape .texto {
+	padding: 20px;
+	flex-grow: 1;
+	font-size: 14px;
+}
+
+.rodape .img {
+	display: block;
+}
+
+@media (max-width: 560px) {
+	* {
+		box-sizing: border-box;
+	}
+	.cabecalho a { display: none; }
+	}
+	.colunas { 
+		flex-direction: column;
+	}
+	.colunas .metade,
+	.colunas .umterco,
+	.colunas .doistercos {
+		width: 100%;
+	}
+	.colunas .coluna:first-child {
+		margin-bottom: 20px;
+	}
+}
